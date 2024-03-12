@@ -16,7 +16,6 @@ export const BlogItem = props => {
 
     return <div key={post.id} className="h-42 my-6 pb-12 border-b dark:border-gray-800" >
         {/* 文章标题 */}
-
         <div className='flex'>
             <div className='article-cover h-full'>
                 {/* 图片封面 */}
@@ -30,7 +29,6 @@ export const BlogItem = props => {
             </div>
 
             <article className='article-info'>
-
                 <h2 className="mb-2">
                     <Link
                         href={url}
@@ -43,11 +41,12 @@ export const BlogItem = props => {
                 <header className="mb-5 text-md text-gray-700 dark:text-gray-300 flex-wrap flex leading-6">
                     <div className='space-x-2'>
                         <span>  <a href={siteConfig('SIMPLE_AUTHOR_LINK', null, CONFIG)} className='p-1 hover:text-red-400 transition-all duration-200'><i className="fa-regular fa-user"></i> {siteConfig('AUTHOR')}</a></span>
-                        <span>
-                            <Link className='p-1 hover:text-red-400 transition-all duration-200' href={`/archive#${formatDateFmt(post?.publishDate, 'yyyy-MM')}`}>
-                                <i className="fa-regular fa-clock" /> {post.date?.start_date || post.createdTime}
-                            </Link>
-                        </span>
+                        {/* 移除下面这一行 */}
+                        {/* <span> */}
+                            {/* <Link className='p-1 hover:text-red-400 transition-all duration-200' href={`/archive#${formatDateFmt(post?.publishDate, 'yyyy-MM')}`}> */}
+                                {/* <i className="fa-regular fa-clock" /> {post.date?.start_date || post.createdTime} */}
+                            {/* </Link> */}
+                        {/* </span> */}
                         <span><TwikooCommentCount post={post} /></span>
                     </div>
 
