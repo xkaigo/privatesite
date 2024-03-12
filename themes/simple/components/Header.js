@@ -23,7 +23,7 @@ export default function Header (props) {
 
                         <div className='flex-col flex justify-center'>
                             <div className='text-2xl font-serif dark:text-white py-2 hover:scale-105 transform duration-200'>{siteConfig('AUTHOR')}</div>
-                            <div className='font-light dark:text-white py-2 hover:scale-105 transform duration-200 text-center' dangerouslySetInnerHTML={{ __html: siteConfig('SIMPLE_LOGO_DESCRIPTION', null, CONFIG) }} />
+                            //<div className='font-light dark:text-white py-2 hover:scale-105 transform duration-200 text-center' dangerouslySetInnerHTML={{ __html: siteConfig('SIMPLE_LOGO_DESCRIPTION', null, CONFIG) }} />
                         </div>
                     </div>
                 </Link>
