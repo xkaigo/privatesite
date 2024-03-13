@@ -98,13 +98,6 @@ export default function ArticleDetail(props) {
         </section>
 
       </article>
-
-    //  {post?.type === 'Post' && <ArticleAround prev={prev} next={next} /> }
-
-    //  {/* 评论互动 */}
-    //  <div className="duration-200 shadow py-6 px-12 w-screen md:w-full overflow-x-auto dark:border-gray-700 bg-white dark:bg-hexo-black-gray">
-    //    <Comment frontMatter={post} />
-    //  </div>
     </div>
   )
 }
