@@ -94,12 +94,12 @@ function AsideLeft(props) {
                 <div className='w-12 my-4' />
                 <MenuList {...props} />
             </section>
-
+/*
             <section className='flex flex-col text-gray-600'>
                 <div className='w-12 my-4' />
                 <SearchInput {...props} />
             </section>
-
+*/
             <section className='flex flex-col dark:text-gray-300'>
                 <div className='w-12 my-4' />
                 <Announcement post={notice} />
@@ -113,11 +113,11 @@ function AsideLeft(props) {
                 <AdSlot type='in-article' />
             </section>
 
-            {router.asPath !== '/tag' && <section className='flex flex-col'>
+          /*  {router.asPath !== '/tag' && <section className='flex flex-col'>
                 <div className='w-12 my-4' />
                 <GroupTag tags={tagOptions} currentTag={currentTag} />
             </section>}
-
+          */
             {router.asPath !== '/category' && <section className='flex flex-col'>
                 <div className='w-12 my-4' />
                 <GroupCategory categories={categoryOptions} currentCategory={currentCategory} />
