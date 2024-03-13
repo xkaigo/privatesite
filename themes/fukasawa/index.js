@@ -144,6 +144,27 @@ const LayoutSlug = (props) => {
 }
 
 /**
+ * 搜索页
+ */
+const LayoutSearch = props => {
+  const { keyword } = props
+  const router = useRouter()
+  useEffect(() => {
+    if (isBrowser) {
+      replaceSearchResult({
+        doms: document.getElementById('posts-wrapper'),
+        search: keyword,
+        target: {
+          element: 'span',
+          className: 'text-red-500 border-b border-dashed'
+        }
+      })
+    }
+  }, [router])
+  return <LayoutPostList {...props} />
+}
+
+/**
  * 归档页面
  */
 const LayoutArchive = (props) => {
@@ -186,24 +207,4 @@ const LayoutCategoryIndex = (props) => {
         </div>
         <div id='category-list' className='duration-200 flex flex-wrap'>
           {categoryOptions?.map(category => {
-            return (
-              <Link
-                key={category.name}
-                href={`/category/${category.name}`}
-                passHref
-                legacyBehavior>
-                <div
-                  className={'hover:text-black dark:hover:text-white dark:text-gray-300 dark:hover:bg-gray-600 px-5 cursor-pointer py-2 hover:bg-gray-100'}>
-                  <i className='mr-4 fas fa-folder' />{category.name}({category.count})
-                </div>
-              </Link>
-            )
-          })}
-        </div>
-      </div>
-    </>
-  )
-}
-
-/**
- * 标
+            return
