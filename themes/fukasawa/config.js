@@ -9,7 +9,7 @@ const CONFIG = {
   // 菜单
   FUKASAWA_MENU_CATEGORY: true, // 显示分类
   FUKASAWA_MENU_TAG: true, // 显示标签
-  FUKASAWA_MENU_ARCHIVE: true, // 显示归档
+  FUKASAWA_MENU_ARCHIVE: false, // 显示归档
   FUKASAWA_MENU_SEARCH: false, // 显示搜索
 
   FUKASAWA_SIDEBAR_COLLAPSE_BUTTON: true, // 侧边栏折叠按钮
