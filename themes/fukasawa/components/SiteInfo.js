@@ -11,7 +11,7 @@ function SiteInfo ({ title }) {
             className='relative leading-6 justify-start w-full text-gray-600 dark:text-gray-300 text-xs '
         >
             <span> © {`${copyrightDate}`}
-            <span className='text-xs font-serif'> Powered by <a href='https://www.xiaokai.world' className='underline'>xiaokai {siteConfig('VERSION')}</a></span><br /></span>
+            <span className='text-xs font-serif'> Powered by <a>xiaokai</a></span><br /></span>
             <h1>{title}</h1>
         </footer>
   )
