@@ -90,23 +90,6 @@ function AsideLeft(props) {
                 {siteConfig('DESCRIPTION')}
             </section>
 
-            <section className='flex flex-col text-gray-600'>
-                <div className='w-12 my-4' />
-                <MenuList {...props} />
-            </section>
-            <section className='flex flex-col dark:text-gray-300'>
-                <div className='w-12 my-4' />
-                <Announcement post={notice} />
-            </section>
-
-            <section>
-                <MailChimpForm />
-            </section>
-
-            <section>
-                <AdSlot type='in-article' />
-            </section>
-
             {router.asPath !== '/category' && <section className='flex flex-col'>
                 <div className='w-12 my-4' />
                 <GroupCategory categories={categoryOptions} currentCategory={currentCategory} />
