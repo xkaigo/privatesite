@@ -65,9 +65,6 @@ export default function ArticleDetail(props) {
 
                 </Link>
                 <span className='mr-2'>|</span>
-                <span className='mx-2 text-gray-400 dark:text-gray-500'>
-                  {locale.COMMON.LAST_EDITED_TIME}: {post.lastEditedDay}
-                </span>
               </>)}
 
             <div className='my-2'>
